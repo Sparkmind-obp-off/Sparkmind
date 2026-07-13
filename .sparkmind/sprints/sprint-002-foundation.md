@@ -1,62 +1,89 @@
-# Sprint 002: Foundation
+# Sprint 002: Engineering Foundation
 
-> **Versi**: 1.1 · **Status dokumen**: Draft (menunggu persetujuan Founder)
-> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
-> **Terkait**: [Indeks sprint](README.md) · [tech-stack.md](../context/tech-stack.md) · [ADR-0001](../decisions/ADR-0001-tech-stack-v1.md) · [ADR-0004](../decisions/ADR-0004-sprint-renumbering.md)
+> **Versi**: 2.0 · **Status dokumen**: Final (sprint selesai)
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 002)
+> **Terkait**: [Indeks sprint](README.md) · [ADR-0005](../decisions/ADR-0005-sprint-002-rescope.md) · [Report 002](../reports/002-engineering-foundation.md) · [source-code.md](../standards/source-code.md)
 
-> ℹ️ Sprint ini sebelumnya bernomor **001**. Dinomori ulang menjadi **002**
-> karena Sprint 001 dipakai untuk SDOS v1.1 Refinement — lihat
-> [ADR-0004](../decisions/ADR-0004-sprint-renumbering.md).
+> ℹ️ Sprint ini sebelumnya bernomor **001** (di-renumber jadi 002 — lihat
+> [ADR-0004](../decisions/ADR-0004-sprint-renumbering.md)), lalu **di-rescope**
+> dari "Foundation (landing page + monorepo)" menjadi murni **Engineering
+> Foundation** atas keputusan Founder/CTO — lihat
+> [ADR-0005](../decisions/ADR-0005-sprint-002-rescope.md).
 
-- **Status**: 📝 Draft (menunggu persetujuan Founder)
-- **Durasi target**: 2–3 hari
-- **Mulai**: TBD
-- **Selesai**: TBD
+- **Status**: 🏁 Done
+- **Durasi target**: 1–2 hari
+- **Mulai**: 2026-07-13
+- **Selesai**: 2026-07-13
 
 ---
 
 ## Goal
 
-Sparkmind punya wajah publik: landing page live di `sparkmind.biz.id` dengan
-positioning "Building AI Employees for Modern Businesses", di atas fondasi
-monorepo yang siap untuk Sprint 003 (Foundry Core).
+Membangun fondasi engineering yang siap digunakan untuk mengembangkan produk
+Sparkmind secara berkelanjutan: workspace monorepo yang berjalan, tooling
+dasar, standar implementasi, dan dokumentasi development — **bukan** fitur
+bisnis.
 
 ## Definition of Success
 
-- [ ] `sparkmind.biz.id` mengarah ke website live (HTTPS, via Cloudflare DNS)
-- [ ] Landing page: hero + value proposition + tombol **Book a Demo**
-- [ ] Monorepo scaffold berjalan (`pnpm dev` menjalankan `apps/web`)
-- [ ] Identitas visual dasar: logo sederhana, palet warna, tipografi
+- [x] Evaluasi struktur repository & keputusan struktur project
+- [x] Workspace monorepo berjalan (`pnpm dev` menjalankan `apps/web`)
+- [x] Tooling dasar terkonfigurasi (TypeScript strict, ESLint, Prettier, Turborepo)
+- [x] Standar struktur source code (`standards/source-code.md`)
+- [x] Standar konfigurasi environment (`standards/environment.md` + `.env.example`)
+- [x] Dokumentasi Development Setup (`docs/setup.md`)
+- [x] Architecture Overview diperbarui (`docs/architecture.md`)
+- [x] Seluruh dokumentasi SDOS konsisten
+- [x] `pnpm lint`, `pnpm type-check`, `pnpm build` lulus
 
 ## Tasks
 
 | # | Task | Status | Catatan |
 |---|------|--------|---------|
-| 1 | Hubungkan `sparkmind.biz.id` ke Cloudflare (nameserver DomaiNesia → Cloudflare) | ⏳ | Butuh akses Founder |
-| 2 | Scaffold monorepo (pnpm + Turborepo, `apps/web`, `packages/ui|shared`) | ⏳ | `packages/ai` & `foundry` menyusul Sprint 003 |
-| 3 | Setup Next.js 15 + TypeScript + Tailwind + shadcn/ui di `apps/web` | ⏳ | |
-| 4 | Identitas visual dasar (logo teks, warna, tipografi) | ⏳ | Sederhana dulu |
-| 5 | Bangun landing page (hero, positioning, Book a Demo) | ⏳ | |
-| 6 | Deploy ke Vercel + hubungkan custom domain | ⏳ | Butuh akun Vercel Founder |
-| 7 | Update dokumentasi (STATE, CHANGELOG, docs/architecture) | ⏳ | |
+| 1 | Evaluasi struktur repo & tetapkan struktur project | ✅ Done | Monorepo pnpm + Turborepo sesuai ADR-0001; tanpa Docker/CI kompleks (ADR-0005) |
+| 2 | Scaffold monorepo: `pnpm-workspace.yaml`, `turbo.json`, `tsconfig.base.json`, root `package.json` | ✅ Done | |
+| 3 | Workspace `apps/web` (Next.js 15 + TypeScript, App Router) | ✅ Done | Halaman placeholder — **bukan** landing page |
+| 4 | Workspace `packages/shared` (util & types bersama) | ✅ Done | `APP_NAME`, `Result<T,E>` sebagai contoh entry |
+| 5 | Tooling dasar: Prettier, ESLint (flat config), `.editorconfig`, `.nvmrc` | ✅ Done | `*.md` dikecualikan dari Prettier (dokumen SDOS milik penulis) |
+| 6 | Standar struktur source code | ✅ Done | `standards/source-code.md` |
+| 7 | Standar konfigurasi environment | ✅ Done | `standards/environment.md` + `.env.example` |
+| 8 | Dokumentasi Development Setup | ✅ Done | `docs/setup.md` |
+| 9 | Update Architecture Overview | ✅ Done | `docs/architecture.md` v1.2 — status implementasi aktual |
+| 10 | Konsistensi SDOS (STATE, CURRENT_SPRINT, CHANGELOG, README, indeks) | ✅ Done | |
+| 11 | Verifikasi: install + lint + type-check + build + smoke test | ✅ Done | Lihat Report 002 §6 |
+| 12 | Commit (Conventional Commits) + push + Engineering Report 002 | ✅ Done | |
 
 ## Out of Scope
 
-- Dashboard, auth (Clerk), database (Supabase) — belum dibutuhkan landing page.
-- Foundry Core (Sprint 003).
-- ClinicFlow AI (Sprint 004).
-- Blog, halaman about, multi-halaman.
+Sesuai arahan Founder/CTO ([ADR-0005](../decisions/ADR-0005-sprint-002-rescope.md)):
+
+- ❌ Fitur produk, UI/landing page, API, database.
+- ❌ DNS `sparkmind.biz.id` → Cloudflare, deploy Vercel, identitas visual
+  — dipindah ke sprint berikutnya (lihat backlog di indeks sprint).
+- ❌ Docker, Kubernetes, microservices, CI/CD kompleks — belum dibutuhkan
+  pre-MVP.
+- ❌ `packages/ui`, `packages/ai`, `packages/foundry` — dibuat saat sprint
+  yang membutuhkannya (Constitution §2.7).
 
 ## Dependencies / Blocker
 
-1. ✋ Persetujuan Founder atas sprint ini.
-2. ✋ Akses Cloudflare (akun) & Vercel (akun) — atau Founder melakukan langkah
-   DNS/deploy dengan panduan.
+- Tidak ada blocker teknis — seluruh pekerjaan lokal repository.
+- Blocker lama (kredensial Cloudflare/Vercel) **tidak lagi memblokir sprint
+  ini** karena deploy keluar dari scope; tetap tercatat untuk sprint landing
+  page berikutnya.
 
 ---
 
-## Retrospective (diisi saat sprint selesai)
+## Retrospective
 
-- **Berjalan baik**:
-- **Perlu diperbaiki**:
-- **Dibawa ke sprint berikutnya**:
+- **Berjalan baik**: scaffold minimal tapi lengkap (2 workspace, tooling,
+  standar, docs); seluruh pipeline verifikasi (`lint`, `type-check`, `build`,
+  smoke test production server) lulus; rescope dicatat rapi sebagai ADR-0005
+  sehingga tidak ada ambiguitas roadmap.
+- **Perlu diperbaiki**: sesi sempat terputus (kredit habis) di tengah sprint —
+  scaffold sudah ada tetapi belum ter-commit; recovery berjalan lancar berkat
+  SDOS + tar handoff. Ditemukan 1 dependency hilang (`@eslint/eslintrc`) saat
+  verifikasi — bukti pentingnya menjalankan pipeline penuh sebelum commit.
+- **Dibawa ke sprint berikutnya**: sprint landing page (hero + Book a Demo +
+  DNS + deploy Vercel) menunggu persetujuan Founder; urutan relatif terhadap
+  Foundry Core diputuskan Founder saat planning.

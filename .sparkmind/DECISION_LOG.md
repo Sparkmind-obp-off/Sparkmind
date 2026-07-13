@@ -1,7 +1,7 @@
 # Decision Log — Indeks Seluruh ADR
 
-> **Versi**: 1.0 · **Status dokumen**: Aktif (living document)
-> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Versi**: 1.1 · **Status dokumen**: Aktif (living document)
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 002)
 > **Terkait**: [Template ADR](templates/adr.md) · [CONSTITUTION.md](CONSTITUTION.md) · [Folder decisions/](decisions/)
 
 Semua keputusan arsitektur & engineering yang penting dicatat sebagai
@@ -26,6 +26,7 @@ Aturan:
 | [ADR-0002](decisions/ADR-0002-sdos-structure.md) | SDOS: knowledge hidup di repository, bukan di system prompt | ✅ Accepted | 2026-07-13 |
 | [ADR-0003](decisions/ADR-0003-foundry-platform-first.md) | Foundry dibangun sebagai platform, produk vertikal sebagai konfigurasi | ✅ Accepted | 2026-07-13 |
 | [ADR-0004](decisions/ADR-0004-sprint-renumbering.md) | Renumbering roadmap sprint: Sprint 001 = SDOS v1.1 Refinement | ✅ Accepted | 2026-07-13 |
+| [ADR-0005](decisions/ADR-0005-sprint-002-rescope.md) | Rescope Sprint 002 — Engineering Foundation murni (tanpa landing page, tanpa Docker) | ✅ Accepted | 2026-07-13 |
 
 ## Ringkasan per Area
 
@@ -33,4 +34,5 @@ Aturan:
 |------|-------------|
 | Tech stack & infrastruktur | ADR-0001 |
 | Governance & cara kerja (SDOS) | ADR-0002, ADR-0004 |
+| Scope & roadmap sprint | ADR-0004, ADR-0005 |
 | Arsitektur produk | ADR-0003 |

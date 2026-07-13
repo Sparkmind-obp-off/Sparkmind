@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.turbo/
+dist/
+build/
+pnpm-lock.yaml
+CHANGELOG.md
+
+# Markdown milik penulis dokumen, bukan Prettier (hindari churn pada SDOS)
+*.md

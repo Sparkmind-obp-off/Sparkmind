@@ -6,7 +6,7 @@ Repository resmi Sparkmind: platform **Foundry** dan produk vertikal AI
 (ClinicFlow AI, dst.) yang dibangun di atasnya.
 
 - **Website (target)**: https://sparkmind.biz.id
-- **Status**: 🟡 Fase Bootstrap / Pre-product
+- **Status**: 🟡 Pre-product — Engineering Foundation selesai (Sprint 002)
 - **Terakhir diperbarui**: 2026-07-13
 
 ---
@@ -61,14 +61,19 @@ Detail & alasan: [`.sparkmind/context/tech-stack.md`](.sparkmind/context/tech-st
 ```
 Sparkmind/
 ├── .sparkmind/     ← SDOS: governance, knowledge, state, sprint, ADR, report
-├── docs/           ← Dokumentasi teknis (arsitektur, onboarding)
+├── apps/
+│   └── web/        ← Next.js 15 (App Router, TS strict) — placeholder
+├── packages/
+│   └── shared/     ← @sparkmind/shared — util & types bersama
+├── docs/           ← Dokumentasi teknis (setup, arsitektur)
 ├── README.md       ← Anda di sini
 ├── CHANGELOG.md    ← Riwayat perubahan penting
-└── .gitignore
+└── package.json    ← Root workspace (pnpm + Turborepo)
 ```
 
-> `apps/` dan `packages/` (monorepo pnpm + Turborepo) akan dibuat di
-> **Sprint 002 (Foundation)** — sengaja belum ada sekarang.
+> Setup development: [`docs/setup.md`](docs/setup.md). Workspace lain
+> (`packages/ui`, `packages/ai`, `packages/foundry`, `apps/dashboard`)
+> dibuat saat sprint yang membutuhkannya.
 
 ## 🔁 Cara Kerja (Ringkas)
 
@@ -86,13 +91,16 @@ Sparkmind/
 |--------|------|--------|--------------|
 | 000 | Bootstrap SDOS | 🏁 Done | `.sparkmind/` + fondasi repo |
 | 001 | SDOS v1.1 Refinement | 🏁 Done | Metadata, cross-reference, CURRENT_SPRINT, DECISION_LOG |
-| 002 | Foundation | 📝 Draft | Landing page live + monorepo scaffold |
-| 003 | Foundry Core | Rencana | AI abstraction, prompts, knowledge layer |
-| 004 | ClinicFlow AI | Rencana | Demo AI Receptionist |
-| 005 | Sales | Rencana | Outreach & demo ke calon klien |
+| 002 | Engineering Foundation | 🏁 Done | Monorepo scaffold + tooling + standar + docs |
+| — | Landing Page | 📋 Backlog | Hero + Book a Demo + DNS + deploy Vercel |
+| — | Foundry Core | 📋 Backlog | AI abstraction, prompts, knowledge layer |
+| — | ClinicFlow AI | 📋 Backlog | Demo AI Receptionist |
+| — | Sales | 📋 Backlog | Outreach & demo ke calon klien |
 
 > Penomoran ulang roadmap (Foundation → 002) dicatat di
-> [ADR-0004](.sparkmind/decisions/ADR-0004-sprint-renumbering.md).
+> [ADR-0004](.sparkmind/decisions/ADR-0004-sprint-renumbering.md);
+> rescope Sprint 002 (landing page keluar dari scope) di
+> [ADR-0005](.sparkmind/decisions/ADR-0005-sprint-002-rescope.md).
 
 ---
 

@@ -8,6 +8,44 @@ akan dimulai ketika ada rilis produk).
 
 ---
 
+## [Sprint 002] — 2026-07-13 — Engineering Foundation
+
+### Added
+
+- **Monorepo scaffold** (pnpm workspace + Turborepo): root `package.json`,
+  `pnpm-workspace.yaml`, `turbo.json`, `tsconfig.base.json`.
+- **`apps/web`** — Next.js 15 (App Router, TypeScript strict); halaman
+  placeholder — **bukan** landing page (lihat ADR-0005).
+- **`packages/shared`** — `@sparkmind/shared` (util & types bersama;
+  `APP_NAME`, `Result<T,E>`).
+- **Tooling dasar** — Prettier (`.prettierrc.json` + `.prettierignore`),
+  ESLint flat config per workspace, `.editorconfig`, `.nvmrc` (Node 20).
+- **Standar baru** — `standards/source-code.md` (struktur source code) &
+  `standards/environment.md` (konfigurasi environment) + `.env.example`.
+- **`docs/setup.md`** — Development Setup (prasyarat, install, perintah,
+  checklist verifikasi).
+- **ADR-0005** — rescope Sprint 002 menjadi Engineering Foundation murni
+  (tanpa landing page, tanpa Docker/CI kompleks).
+- **Engineering Report 002** — `reports/002-engineering-foundation.md`.
+
+### Changed
+
+- `docs/architecture.md` → **v1.2** — mencerminkan status implementasi aktual
+  (struktur monorepo ✅/⏳, batasan saat ini).
+- `sprints/sprint-002-foundation.md` → **Engineering Foundation** (Final,
+  Done) — goal, task, retrospective terisi.
+- `STATE.md`, `CURRENT_SPRINT.md`, `DECISION_LOG.md`, `sprints/README.md`,
+  root `README.md` — konsisten dengan hasil Sprint 002; landing page &
+  Foundry Core menjadi backlog (nomor sprint ditetapkan saat planning).
+
+### Notes
+
+- Verifikasi penuh lulus: `pnpm lint`, `pnpm type-check`, `pnpm build`,
+  smoke test production server (`next start` → HTTP 200).
+- Tidak ada fitur produk/UI/API/database — sesuai scope ADR-0005.
+
+---
+
 ## [Sprint 001] — 2026-07-13 — SDOS v1.1 Refinement
 
 ### Added

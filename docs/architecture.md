@@ -1,11 +1,13 @@
 # Arsitektur Sistem — Sparkmind v1.0
 
-> **Versi**: 1.1 · **Status dokumen**: Aktif
-> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
-> **Terkait**: [ADR-0001](../.sparkmind/decisions/ADR-0001-tech-stack-v1.md) · [tech-stack.md](../.sparkmind/context/tech-stack.md) · [product.md](../.sparkmind/context/product.md)
+> **Versi**: 1.2 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 002)
+> **Terkait**: [ADR-0001](../.sparkmind/decisions/ADR-0001-tech-stack-v1.md) · [tech-stack.md](../.sparkmind/context/tech-stack.md) · [source-code.md](../.sparkmind/standards/source-code.md) · [Development Setup](setup.md)
 
-Dokumen ini menggambarkan arsitektur **target** v1.0. Implementasi dimulai
-pada Sprint 002 — Foundation (landing page + monorepo scaffold).
+Dokumen ini menggambarkan arsitektur **target** v1.0 beserta **status
+implementasi** per Sprint 002 (Engineering Foundation): monorepo scaffold
+sudah berjalan; layanan eksternal (Vercel, Supabase, Clerk, dst.) belum
+diintegrasikan.
 
 ---
 
@@ -47,23 +49,30 @@ layer**, **Supabase sebagai data layer**.
 | Auth | Clerk | Login, session, multi-organization |
 | Observability | PostHog + Sentry | Analytics produk + error tracking |
 
-## 3. Struktur Monorepo (Target Sprint 002)
+## 3. Struktur Monorepo
+
+Status per Sprint 002 — ✅ sudah ada · ⏳ dibuat saat sprint yang membutuhkan:
 
 ```
 sparkmind/
 ├── apps/
-│   ├── web/          ← landing page + website utama
-│   └── dashboard/    ← (nanti, saat dibutuhkan)
+│   ├── web/          ✅ Next.js 15 (App Router, TS strict) — masih placeholder
+│   └── dashboard/    ⏳ nanti, saat dibutuhkan
 ├── packages/
-│   ├── ui/           ← komponen bersama
-│   ├── ai/           ← wrapper Vercel AI SDK
-│   ├── foundry/      ← engine platform (agents, memory, knowledge, ...)
-│   └── shared/       ← util & types bersama
-├── docs/
-├── turbo.json
-├── pnpm-workspace.yaml
-└── package.json
+│   ├── shared/       ✅ util & types bersama (@sparkmind/shared)
+│   ├── ui/           ⏳ komponen bersama (saat app kedua / Rule of Three)
+│   ├── ai/           ⏳ wrapper Vercel AI SDK (Foundry Core)
+│   └── foundry/      ⏳ engine platform (Foundry Core)
+├── docs/             ✅ setup.md + architecture.md
+├── .sparkmind/       ✅ SDOS (governance)
+├── turbo.json        ✅ pipeline build/dev/lint/type-check
+├── pnpm-workspace.yaml ✅
+├── tsconfig.base.json  ✅ basis TypeScript strict
+└── package.json        ✅ root (turbo + prettier)
 ```
+
+Aturan letak kode & dependency antar-package:
+[standards/source-code.md](../.sparkmind/standards/source-code.md).
 
 ## 4. Prinsip Arsitektur
 
@@ -78,6 +87,11 @@ sparkmind/
 
 ## 5. Batasan Saat Ini
 
-- Belum ada kode aplikasi — repository berisi fondasi governance (SDOS).
-- Kredensial Cloudflare/Vercel/Supabase belum tersedia (blocker Sprint 002,
-  lihat [STATE.md](../.sparkmind/STATE.md)).
+- `apps/web` masih halaman placeholder — **bukan** landing page; landing page
+  dibangun pada sprint berikutnya
+  ([ADR-0005](../.sparkmind/decisions/ADR-0005-sprint-002-rescope.md)).
+- Belum ada integrasi layanan eksternal (Vercel, Cloudflare DNS, Supabase,
+  Clerk, PostHog) — kredensial belum tersedia (lihat
+  [STATE.md](../.sparkmind/STATE.md)).
+- Belum ada CI/CD — verifikasi lewat checklist lokal
+  ([setup.md §6](setup.md)); CI ditambahkan saat kebutuhan nyata muncul.

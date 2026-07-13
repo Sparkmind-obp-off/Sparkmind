@@ -1,7 +1,7 @@
 # Current Sprint — Pointer Sprint Aktif
 
-> **Versi**: 1.0 · **Status dokumen**: Aktif (living document)
-> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Versi**: 1.1 · **Status dokumen**: Aktif (living document)
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 002)
 > **Terkait**: [Indeks sprint](sprints/README.md) · [STATE.md](STATE.md)
 
 File ini adalah **satu-satunya sumber** untuk mengetahui sprint yang sedang
@@ -14,14 +14,16 @@ masing-masing.
 
 | Field | Nilai |
 |-------|-------|
-| **Sprint aktif** | *Tidak ada* — Sprint 001 baru saja selesai |
-| **Sprint terakhir selesai** | [Sprint 001 — SDOS v1.1 Refinement](sprints/sprint-001-sdos-refinement.md) (🏁 Done, 2026-07-13) |
-| **Sprint berikutnya** | [Sprint 002 — Foundation](sprints/sprint-002-foundation.md) (📝 Draft, menunggu persetujuan Founder) |
+| **Sprint aktif** | *Tidak ada* — Sprint 002 baru saja selesai |
+| **Sprint terakhir selesai** | [Sprint 002 — Engineering Foundation](sprints/sprint-002-foundation.md) (🏁 Done, 2026-07-13) |
+| **Sprint berikutnya** | Menunggu planning Founder — kandidat: **Landing Page** (hero + Book a Demo + DNS + deploy) atau **Foundry Core**; urutan diputuskan Founder |
 
 ## 🚧 Blocker untuk Sprint Berikutnya
 
-1. ✋ Persetujuan Founder atas [Sprint 002 — Foundation](sprints/sprint-002-foundation.md).
-2. ✋ Akses/kredensial Cloudflare & Vercel untuk DNS + deploy.
+1. ✋ Planning & persetujuan Founder atas sprint berikutnya (landing page vs
+   Foundry Core).
+2. ✋ Akses/kredensial Cloudflare & Vercel untuk DNS + deploy — hanya
+   dibutuhkan bila sprint landing page yang dipilih.
 
 ---
 
