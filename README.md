@@ -21,7 +21,8 @@ di kepala siapa pun.
 |----------------|-----------|
 | **AI Engineer / Engineer baru** | [`.sparkmind/README.md`](.sparkmind/README.md) → ikuti urutan bacaan wajib |
 | **Founder / CTO** | [`.sparkmind/STATE.md`](.sparkmind/STATE.md) untuk kondisi terkini |
-| **Ingin tahu keputusan teknis** | [`.sparkmind/decisions/`](.sparkmind/decisions/README.md) (Decision Log / ADR) |
+| **Ingin tahu keputusan teknis** | [`.sparkmind/DECISION_LOG.md`](.sparkmind/DECISION_LOG.md) (indeks seluruh ADR) |
+| **Ingin tahu sprint aktif** | [`.sparkmind/CURRENT_SPRINT.md`](.sparkmind/CURRENT_SPRINT.md) |
 | **Ingin tahu rencana kerja** | [`.sparkmind/sprints/`](.sparkmind/sprints/README.md) |
 
 ---
@@ -39,8 +40,8 @@ Setiap keputusan engineering harus lolos pertanyaan:
 
 | Produk | Deskripsi | Status |
 |--------|-----------|--------|
-| **Sparkmind Foundry** | Platform/engine bersama untuk semua AI Employee | Rencana (Sprint 002) |
-| **ClinicFlow AI** | AI Receptionist untuk klinik kecil-menengah Indonesia | Rencana (Sprint 003) |
+| **Sparkmind Foundry** | Platform/engine bersama untuk semua AI Employee | Rencana (Sprint 003) |
+| **ClinicFlow AI** | AI Receptionist untuk klinik kecil-menengah Indonesia | Rencana (Sprint 004) |
 | DealerFlow / HotelFlow / PropertyFlow / RestaurantFlow AI | Produk vertikal berikutnya | Backlog |
 
 Detail: [`.sparkmind/context/product.md`](.sparkmind/context/product.md)
@@ -67,7 +68,7 @@ Sparkmind/
 ```
 
 > `apps/` dan `packages/` (monorepo pnpm + Turborepo) akan dibuat di
-> **Sprint 001** — sengaja belum ada sekarang.
+> **Sprint 002 (Foundation)** — sengaja belum ada sekarang.
 
 ## 🔁 Cara Kerja (Ringkas)
 
@@ -84,10 +85,14 @@ Sparkmind/
 | Sprint | Nama | Status | Output Utama |
 |--------|------|--------|--------------|
 | 000 | Bootstrap SDOS | 🏁 Done | `.sparkmind/` + fondasi repo |
-| 001 | Foundation | 📝 Draft | Landing page live + monorepo scaffold |
-| 002 | Foundry Core | Rencana | AI abstraction, prompts, knowledge layer |
-| 003 | ClinicFlow AI | Rencana | Demo AI Receptionist |
-| 004 | Sales | Rencana | Outreach & demo ke calon klien |
+| 001 | SDOS v1.1 Refinement | 🏁 Done | Metadata, cross-reference, CURRENT_SPRINT, DECISION_LOG |
+| 002 | Foundation | 📝 Draft | Landing page live + monorepo scaffold |
+| 003 | Foundry Core | Rencana | AI abstraction, prompts, knowledge layer |
+| 004 | ClinicFlow AI | Rencana | Demo AI Receptionist |
+| 005 | Sales | Rencana | Outreach & demo ke calon klien |
+
+> Penomoran ulang roadmap (Foundation → 002) dicatat di
+> [ADR-0004](.sparkmind/decisions/ADR-0004-sprint-renumbering.md).
 
 ---
 

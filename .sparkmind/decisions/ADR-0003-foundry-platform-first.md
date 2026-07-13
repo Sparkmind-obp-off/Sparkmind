@@ -1,5 +1,9 @@
 # ADR-0003: Foundry Dibangun sebagai Platform, Produk Vertikal sebagai Konfigurasi
 
+> **Versi**: 1.1 · **Status dokumen**: Final
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001 — metadata + renumber sprint; keputusan tidak berubah)
+> **Terkait**: [DECISION_LOG.md](../DECISION_LOG.md) · [product.md](../context/product.md) · [ADR-0001](ADR-0001-tech-stack-v1.md)
+
 - **Tanggal**: 2026-07-13
 - **Status**: ✅ Accepted
 - **Diputuskan oleh**: Founder + CTO
@@ -39,7 +43,7 @@ Konsekuensi struktural: **monorepo** (pnpm + Turborepo) dengan `apps/` dan
 ## Konsekuensi
 
 - **Positif**: time-to-market produk baru sangat cepat; konsistensi kualitas.
-- **Negatif**: investasi waktu awal (Sprint 002) sebelum produk pertama jadi;
+- **Negatif**: investasi waktu awal (Sprint 003 — Foundry Core) sebelum produk pertama jadi;
   disiplin menjaga Foundry tetap generic (jangan bocorkan logika spesifik
   klinik ke dalam core).
 - **Guard rail**: modul Foundry hanya dibuat ketika produk aktif

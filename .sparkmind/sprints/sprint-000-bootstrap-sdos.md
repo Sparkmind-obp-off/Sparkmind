@@ -1,5 +1,9 @@
 # Sprint 000: Bootstrap SDOS
 
+> **Versi**: 1.1 · **Status dokumen**: Final (sprint selesai)
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Terkait**: [Indeks sprint](README.md) · [Report 000](../reports/000-bootstrap-sdos.md) · [ADR-0002](../decisions/ADR-0002-sdos-structure.md)
+
 - **Status**: 🏁 Done
 - **Durasi target**: 1 hari
 - **Mulai**: 2026-07-13
@@ -33,7 +37,7 @@ knowledge, dan workflow yang jelas.
 | 5 | Tulis standards (engineering, documentation, repository) | ✅ Done |
 | 6 | Buat templates | ✅ Done |
 | 7 | Tulis ADR-0001 s/d ADR-0003 | ✅ Done |
-| 8 | Draft Sprint 001 | ✅ Done |
+| 8 | Draft sprint Foundation (kini bernomor 002, lihat ADR-0004) | ✅ Done |
 | 9 | README + CHANGELOG root, docs/ | ✅ Done |
 | 10 | Commit, push, Engineering Report 000 | ✅ Done |
 
@@ -41,7 +45,7 @@ knowledge, dan workflow yang jelas.
 
 - Aplikasi, landing page, dashboard, fitur bisnis apa pun (sesuai mandat
   Mission 000).
-- Scaffold monorepo (masuk Sprint 001).
+- Scaffold monorepo (masuk sprint Foundation — kini Sprint 002).
 
 ---
 
@@ -49,6 +53,7 @@ knowledge, dan workflow yang jelas.
 
 - **Berjalan baik**: repository kosong → fondasi lengkap dalam satu misi;
   keputusan lama dari percakapan perencanaan berhasil dipindahkan ke ADR.
-- **Perlu diperbaiki**: butuh persetujuan Founder untuk Sprint 001 dan
+- **Perlu diperbaiki**: butuh persetujuan Founder untuk sprint Foundation dan
   kredensial deploy (Cloudflare/Vercel) sebelum sprint bisa mulai.
-- **Dibawa ke sprint berikutnya**: eksekusi Sprint 001 setelah disetujui.
+- **Dibawa ke sprint berikutnya**: eksekusi sprint Foundation (kini Sprint 002)
+  setelah disetujui.

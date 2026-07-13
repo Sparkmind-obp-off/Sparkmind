@@ -1,6 +1,8 @@
 # docs/ — Dokumentasi Teknis Sparkmind
 
-> **Terakhir diperbarui**: 2026-07-13 (Mission 000)
+> **Versi**: 1.1 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Terkait**: [README SDOS](../.sparkmind/README.md) · [documentation.md](../.sparkmind/standards/documentation.md)
 
 Folder ini berisi dokumentasi teknis mendalam: arsitektur, setup, dan
 onboarding. Untuk governance, knowledge bisnis, dan state proyek, lihat
@@ -13,7 +15,7 @@ onboarding. Untuk governance, knowledge bisnis, dan state proyek, lihat
 | Dokumen | Isi | Status |
 |---------|-----|--------|
 | [architecture.md](architecture.md) | Arsitektur sistem target v1.0 | ✅ Ada |
-| setup.md | Cara setup lingkungan development | ⏳ Dibuat di Sprint 001 (setelah monorepo scaffold) |
+| setup.md | Cara setup lingkungan development | ⏳ Dibuat di Sprint 002 (setelah monorepo scaffold) |
 
 ## Aturan
 

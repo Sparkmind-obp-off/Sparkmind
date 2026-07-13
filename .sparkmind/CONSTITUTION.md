@@ -1,7 +1,9 @@
 # Sparkmind Engineering Constitution
 
-> **Versi**: 1.0
-> **Status**: Aktif
+> **Versi**: 1.0 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001 — hanya metadata; isi tidak berubah)
+> **Terkait**: [README SDOS](README.md) · [STATE.md](STATE.md) · [session-lifecycle.md](workflows/session-lifecycle.md) · [DECISION_LOG.md](DECISION_LOG.md)
+>
 > Perubahan pada dokumen ini hanya boleh dilakukan atas persetujuan Founder/CTO,
 > dan harus dicatat sebagai ADR di `decisions/`.
 

@@ -1,5 +1,9 @@
 # Repository Standards
 
+> **Versi**: 1.1 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Terkait**: [documentation.md](documentation.md) · [engineering.md](engineering.md) · [git-workflow.md](../workflows/git-workflow.md)
+
 Standar struktur & kebersihan repository.
 
 ---
@@ -15,7 +19,7 @@ Sparkmind/
 └── .gitignore
 ```
 
-Setelah Sprint 001, bertambah: `apps/`, `packages/`, `turbo.json`,
+Setelah Sprint 002 (Foundation), bertambah: `apps/`, `packages/`, `turbo.json`,
 `pnpm-workspace.yaml`, `package.json` (lihat `context/tech-stack.md`).
 
 ## 2. Aturan Penamaan

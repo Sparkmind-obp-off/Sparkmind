@@ -1,11 +1,11 @@
 # Arsitektur Sistem — Sparkmind v1.0
 
-> **Terakhir diperbarui**: 2026-07-13 (Mission 000)
-> Sumber keputusan: [ADR-0001](../.sparkmind/decisions/ADR-0001-tech-stack-v1.md)
-> · Detail stack: [tech-stack.md](../.sparkmind/context/tech-stack.md)
+> **Versi**: 1.1 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Terkait**: [ADR-0001](../.sparkmind/decisions/ADR-0001-tech-stack-v1.md) · [tech-stack.md](../.sparkmind/context/tech-stack.md) · [product.md](../.sparkmind/context/product.md)
 
 Dokumen ini menggambarkan arsitektur **target** v1.0. Implementasi dimulai
-pada Sprint 001 (landing page + monorepo scaffold).
+pada Sprint 002 — Foundation (landing page + monorepo scaffold).
 
 ---
 
@@ -47,7 +47,7 @@ layer**, **Supabase sebagai data layer**.
 | Auth | Clerk | Login, session, multi-organization |
 | Observability | PostHog + Sentry | Analytics produk + error tracking |
 
-## 3. Struktur Monorepo (Target Sprint 001)
+## 3. Struktur Monorepo (Target Sprint 002)
 
 ```
 sparkmind/
@@ -79,5 +79,5 @@ sparkmind/
 ## 5. Batasan Saat Ini
 
 - Belum ada kode aplikasi — repository berisi fondasi governance (SDOS).
-- Kredensial Cloudflare/Vercel/Supabase belum tersedia (blocker Sprint 001,
+- Kredensial Cloudflare/Vercel/Supabase belum tersedia (blocker Sprint 002,
   lihat [STATE.md](../.sparkmind/STATE.md)).

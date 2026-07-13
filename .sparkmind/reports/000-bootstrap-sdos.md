@@ -1,5 +1,13 @@
 # Engineering Report 000: Bootstrap SDOS & Fondasi Repository
 
+> **Versi**: 1.1 · **Status dokumen**: Final (arsip historis)
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001 — hanya metadata; isi laporan tidak diubah)
+> **Terkait**: [Sprint 000](../sprints/sprint-000-bootstrap-sdos.md) · [Report 001](001-sdos-v1.1-refinement.md)
+>
+> ⚠️ **Catatan historis**: penyebutan "Sprint 001" di laporan ini merujuk pada
+> sprint **Foundation**, yang sejak Sprint 001 (SDOS v1.1 Refinement) dinomori
+> ulang menjadi **Sprint 002** — lihat [ADR-0004](../decisions/ADR-0004-sprint-renumbering.md).
+
 - **Tanggal**: 2026-07-13
 - **Engineer**: AI Engineer (GenSpark)
 - **Sprint / Misi**: Sprint 000 — Bootstrap SDOS (Mission 000)

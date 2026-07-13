@@ -1,5 +1,9 @@
 # Engineering Standards
 
+> **Versi**: 1.1 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Terkait**: [documentation.md](documentation.md) · [repository.md](repository.md) · [tech-stack.md](../context/tech-stack.md)
+
 Standar penulisan kode Sparkmind. Berlaku untuk semua kode di repository.
 
 ---
@@ -9,7 +13,7 @@ Standar penulisan kode Sparkmind. Berlaku untuk semua kode di repository.
 - **TypeScript** untuk seluruh kode aplikasi. `strict: true` wajib.
 - Hindari `any`. Gunakan `unknown` + narrowing bila tipe tidak diketahui.
 - Formatter & linter mengikuti konfigurasi repo (akan ditambahkan saat
-  scaffold monorepo di Sprint 001: Prettier + ESLint default Next.js).
+  scaffold monorepo di Sprint 002: Prettier + ESLint default Next.js).
 
 ## 2. Prinsip Kode
 
@@ -44,7 +48,7 @@ Standar penulisan kode Sparkmind. Berlaku untuk semua kode di repository.
 
 - Fase bootstrap: minimal **smoke test manual** — jalankan aplikasi dan
   verifikasi alur utama sebelum commit.
-- Unit test ditambahkan untuk logika inti Foundry (mulai Sprint 002).
+- Unit test ditambahkan untuk logika inti Foundry (mulai Sprint 003).
 - Jangan pernah menyatakan task selesai untuk kode yang belum pernah dijalankan.
 
 ## 7. AI-Specific

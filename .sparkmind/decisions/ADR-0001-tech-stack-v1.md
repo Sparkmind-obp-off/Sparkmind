@@ -1,5 +1,9 @@
 # ADR-0001: Tech Stack v1.0 — Hybrid Vercel + Cloudflare, Bukan Full Cloudflare Native
 
+> **Versi**: 1.1 · **Status dokumen**: Final
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001 — hanya metadata; keputusan tidak berubah)
+> **Terkait**: [DECISION_LOG.md](../DECISION_LOG.md) · [tech-stack.md](../context/tech-stack.md) · [ADR-0003](ADR-0003-foundry-platform-first.md)
+
 - **Tanggal**: 2026-07-13
 - **Status**: ✅ Accepted
 - **Diputuskan oleh**: Founder + CTO (percakapan perencanaan pra-Mission 000)

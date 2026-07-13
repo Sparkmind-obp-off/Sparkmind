@@ -1,6 +1,10 @@
 # Tech Stack — Final v1.0
 
-> Keputusan resmi: lihat `decisions/ADR-0001-tech-stack-v1.md`.
+> **Versi**: 1.1 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Terkait**: [ADR-0001](../decisions/ADR-0001-tech-stack-v1.md) · [product.md](product.md) · [engineering.md](../standards/engineering.md)
+>
+> Keputusan resmi: lihat [ADR-0001](../decisions/ADR-0001-tech-stack-v1.md).
 > Perubahan stack = ADR baru + persetujuan CTO/Founder.
 
 ---
@@ -74,7 +78,7 @@ Keputusan ini dicatat di ADR-0001.
 
 ---
 
-## Struktur Monorepo (Target — dibuat di Sprint 001)
+## Struktur Monorepo (Target — dibuat di Sprint 002)
 
 ```
 sparkmind/

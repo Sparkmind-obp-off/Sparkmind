@@ -1,8 +1,9 @@
 # .sparkmind — Sparkmind Development Operating System (SDOS)
 
-> **Versi**: 1.0
-> **Status**: Aktif
-> **Dibuat**: Mission 000 (Bootstrap)
+> **Versi**: 1.1 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001 — SDOS v1.1 Refinement)
+> **Terkait**: [CONSTITUTION.md](CONSTITUTION.md) · [STATE.md](STATE.md) · [CURRENT_SPRINT.md](CURRENT_SPRINT.md) · [DECISION_LOG.md](DECISION_LOG.md)
+> **Dibuat**: Mission 000 (Bootstrap) · Disempurnakan: Sprint 001
 
 Folder ini adalah **Operating System** dari repository Sparkmind.
 
@@ -18,13 +19,14 @@ Setiap sesi kerja **WAJIB** dimulai dengan membaca file berikut, sesuai urutan:
 
 | Urutan | File | Tujuan |
 |--------|------|--------|
-| 1 | `CONSTITUTION.md` | Aturan dan prinsip yang tidak boleh dilanggar |
-| 2 | `STATE.md` | Kondisi terkini proyek — apa yang sudah/belum ada |
-| 3 | `sprints/` → sprint aktif | Apa yang sedang dikerjakan sekarang |
-| 4 | `context/` | Konteks bisnis, produk, dan tech stack |
-| 5 | `workflows/session-lifecycle.md` | Cara bekerja dalam satu sesi |
+| 1 | [`CONSTITUTION.md`](CONSTITUTION.md) | Aturan dan prinsip yang tidak boleh dilanggar |
+| 2 | [`STATE.md`](STATE.md) | Kondisi terkini proyek — apa yang sudah/belum ada |
+| 3 | [`CURRENT_SPRINT.md`](CURRENT_SPRINT.md) | Pointer sprint aktif → buka file sprint yang dirujuk |
+| 4 | [`DECISION_LOG.md`](DECISION_LOG.md) | Indeks seluruh ADR — keputusan yang mengikat |
+| 5 | [`context/`](context/) | Konteks bisnis, produk, dan tech stack |
+| 6 | [`workflows/session-lifecycle.md`](workflows/session-lifecycle.md) | Cara bekerja dalam satu sesi |
 
-Setelah membaca kelima hal di atas, baru boleh mulai bekerja.
+Setelah membaca keenam hal di atas, baru boleh mulai bekerja.
 
 ---
 
@@ -35,6 +37,8 @@ Setelah membaca kelima hal di atas, baru boleh mulai bekerja.
 ├── README.md                 ← Anda di sini
 ├── CONSTITUTION.md           ← Prinsip & aturan permanen
 ├── STATE.md                  ← Kondisi terkini proyek (selalu di-update)
+├── CURRENT_SPRINT.md         ← Pointer sprint aktif (satu-satunya sumber)
+├── DECISION_LOG.md           ← Indeks kanonis seluruh ADR
 │
 ├── context/                  ← Knowledge (jarang berubah)
 │   ├── company.md            ← Visi, misi, positioning Sparkmind
@@ -55,7 +59,7 @@ Setelah membaca kelima hal di atas, baru boleh mulai bekerja.
 │   └── sprint-XXX-nama.md    ← Satu file per sprint
 │
 ├── decisions/                ← ADR (Architecture Decision Records)
-│   ├── README.md             ← Indeks keputusan
+│   ├── README.md             ← Aturan penulisan ADR (indeks: DECISION_LOG.md)
 │   └── ADR-XXXX-judul.md     ← Satu file per keputusan besar
 │
 ├── templates/                ← Template dokumen
@@ -91,7 +95,17 @@ tambahkan ke file yang sesuai di dalam `.sparkmind/`.
 Setelah setiap sesi kerja, file berikut **wajib diperiksa dan di-update** jika terdampak:
 
 - `STATE.md` — selalu update jika ada perubahan kondisi proyek
+- `CURRENT_SPRINT.md` — update saat status/progress sprint berubah
 - `CHANGELOG.md` (di root) — catat perubahan penting
-- `decisions/` — jika ada keputusan arsitektur baru
+- `decisions/` + `DECISION_LOG.md` — jika ada keputusan arsitektur baru
 - `reports/` — buat Engineering Report baru setiap misi selesai
 - Sprint aktif — update progress task
+
+---
+
+## 🏷 Metadata Standar Dokumen (sejak v1.1)
+
+Setiap dokumen SDOS memiliki blok metadata di bawah judul (versi, status,
+tanggal update, cross-reference). Aturan lengkap:
+[standards/documentation.md](standards/documentation.md) §3.
+Pengecualian: `templates/` (harus bersih agar bisa langsung disalin).

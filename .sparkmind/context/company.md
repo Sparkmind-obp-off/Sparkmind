@@ -1,5 +1,9 @@
 # Sparkmind — Company Context
 
+> **Versi**: 1.1 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Terkait**: [product.md](product.md) · [tech-stack.md](tech-stack.md) · [CONSTITUTION.md](../CONSTITUTION.md)
+>
 > Sumber: keputusan Founder & CTO, fase bootstrap 2026.
 
 ---
@@ -38,7 +42,7 @@ Produk vertikal dibangun di atasnya:
 
 | Produk | Industri | Status |
 |--------|----------|--------|
-| ClinicFlow AI | Klinik/kesehatan | Produk pertama (Sprint 003) |
+| ClinicFlow AI | Klinik/kesehatan | Produk pertama (Sprint 004) |
 | DealerFlow AI | Otomotif | Backlog |
 | HotelFlow AI | Perhotelan | Backlog |
 | PropertyFlow AI | Properti | Backlog |

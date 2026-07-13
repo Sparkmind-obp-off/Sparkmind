@@ -1,5 +1,9 @@
 # Git Workflow
 
+> **Versi**: 1.1 · **Status dokumen**: Aktif
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001)
+> **Terkait**: [session-lifecycle.md](session-lifecycle.md) · [repository.md](../standards/repository.md) · [engineering.md](../standards/engineering.md)
+
 ---
 
 ## Branch

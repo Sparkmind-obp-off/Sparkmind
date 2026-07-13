@@ -1,5 +1,9 @@
 # ADR-0002: SDOS — Knowledge Hidup di Repository, Bukan di System Prompt
 
+> **Versi**: 1.1 · **Status dokumen**: Final
+> **Terakhir diperbarui**: 2026-07-13 (Sprint 001 — hanya metadata; keputusan tidak berubah)
+> **Terkait**: [DECISION_LOG.md](../DECISION_LOG.md) · [README SDOS](../README.md) · [CONSTITUTION.md](../CONSTITUTION.md)
+
 - **Tanggal**: 2026-07-13
 - **Status**: ✅ Accepted
 - **Diputuskan oleh**: CTO
