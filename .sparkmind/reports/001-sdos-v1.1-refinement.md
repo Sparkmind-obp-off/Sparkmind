@@ -7,7 +7,7 @@
 - **Tanggal**: 2026-07-13
 - **Engineer**: AI Engineer (GenSpark)
 - **Sprint / Misi**: Sprint 001 — SDOS v1.1 Refinement
-- **Commit**: _(diisi setelah commit — lihat §10)_
+- **Commit**: `99bc9a1` (docs(sdos): refine SDOS to v1.1 — Sprint 001)
 
 ---
 
@@ -115,7 +115,11 @@ mengubah arsitektur produk.
 
 ## 10. Commit & Push
 
-_(Bagian ini diisi pada commit follow-up, mengikuti pola Report 000.)_
-
-- **Commit**: _pending_
-- **Push**: _pending_
+- **Commit utama**: `99bc9a1` — `docs(sdos): refine SDOS to v1.1 — metadata,
+  cross-references, CURRENT_SPRINT & DECISION_LOG (Sprint 001)` — 29 file,
+  +612/−107.
+- **Push**: ✅ Berhasil ke `origin/main`
+  (github.com/Sparkmind-obp-off/Sparkmind, `5519109..99bc9a1`), 2026-07-13.
+- **Commit follow-up**: `docs(report): record commit hash and push status in
+  engineering report 001` — hanya mengisi bagian ini (pola sama dengan
+  Report 000).
